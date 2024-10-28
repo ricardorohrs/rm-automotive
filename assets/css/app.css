@@ -68,7 +68,7 @@ body
 {
 height: 100% !important;
 color: var(--body-color);
-font-family: "Afacad", sans-serif;
+font-family: eudoxus, sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 vertical-align: baseline;
@@ -79,6 +79,16 @@ background-color: var(--white-bg);
 counter-reset: my-sec-counter;
 font-size: 22px;
 line-height: 32px;
+}
+
+@font-face {
+  font-family: eudoxus-bold;
+  src:url("../fonts/EudoxusSans-Bold-BF659b6cb1408e5.ttf");
+}
+
+@font-face {
+  font-family: eudoxus;
+  src:url("../fonts/EudoxusSans-Regular-BF659b6cb1d4714.ttf");
 }
 
 hr
@@ -291,7 +301,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Afacad", sans-serif;
+  font-family: eudoxus, sans-serif;
   color: var(--heading-color);
   font-weight: 600;
   margin: 0;
@@ -321,7 +331,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 56px;
+  font-size: 42px;
   line-height: 1.14em; /* 116.667% */
 }
 @media (max-width: 991px) {
@@ -357,7 +367,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.3em;
 }
 
@@ -674,7 +684,7 @@ blockquote {
   margin: 0 0 24px;
   border-left: 5px solid var(--accent-color);
   color: var(--accent-color);
-  font-family: "Afacad", sans-serif;
+  font-family: eudoxus, sans-serif;
   background: linear-gradient(90deg, rgba(1, 25, 255, 0.1) 0%, rgba(1, 25, 255, 0) 100%);
 }
 
@@ -1806,16 +1816,15 @@ header.tekup-header-section.header-seven.sticky-menu {
 }
 
 .sticky-menu .tekup-header-top {
-  margin-top: -57px;
+  margin-top: -60px;
   opacity: 0;
 }
 
 .container-fuild {
   max-width: 1920px;
-  margin: 0 auto;
-  margin-right: 60px;
-  margin-left: 60px;
+  margin: 0 60px;
 }
+
 @media (max-width: 1300px) {
   .container-fuild {
     margin-right: 30px;
@@ -1830,7 +1839,7 @@ header.tekup-header-section.header-seven.sticky-menu {
 }
 
 .tekup-header-top {
-  padding: 12px 0;
+  padding: 0;
   transition: all 0.4s;
 }
 @media (max-width: 991px) {
@@ -2287,7 +2296,7 @@ header.tekup-header-section.header-seven.sticky-menu {
   margin-bottom: 30px;
 }
 .tekup-footer-textarea p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
   margin-bottom: 28px;
 }
@@ -2321,7 +2330,7 @@ header.tekup-header-section.header-seven.sticky-menu {
   margin-bottom: 0;
 }
 .tekup-footer-menu ul li a {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--heading-color);
   position: relative;
 }
@@ -2504,10 +2513,8 @@ header.tekup-header-section.header-seven.sticky-menu {
   padding: 18px 38px;
   border-radius: 0;
   font-weight: 500;
-  font-family: "Afacad", sans-serif;
+  font-family: eudoxus, sans-serif;
   width: fit-content;
-  position: relative;
-  z-index: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
   display: inline-flex;
@@ -2516,10 +2523,8 @@ header.tekup-header-section.header-seven.sticky-menu {
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  overflow: hidden;
   color: var(--white-color) !important;
   background-color: var(--accent-bg);
-  position: relative;
   z-index: 0;
   overflow: hidden;
   position: relative;
@@ -3869,7 +3874,7 @@ h1.post__title {
   max-width: 305px;
 }
 .tekup-counter-data4 h2 {
-  font-size: 80px;
+  font-size: 65px;
   line-height: 1em;
   color: var(--white-color);
 }
@@ -4645,7 +4650,7 @@ h1.post__title {
   }
 }
 .tekup-cta-content h2 {
-  font-size: 80px;
+  font-size: 70px;
   margin-bottom: 12px;
   line-height: 1em;
   color: var(--white-color);
@@ -6060,7 +6065,7 @@ span.total-amount {
 }
 .tekup-section-title.center {
   text-align: center;
-  max-width: 620px;
+  max-width: 950px;
   margin: 0 auto;
 }
 .tekup-section-title.center.large-width {
@@ -6918,7 +6923,7 @@ button#tekup-main-form-btn:hover i {
   line-height: 1em;
   margin-bottom: 10px;
   letter-spacing: -1.04px;
-  font-family: "Afacad", sans-serif;
+  font-family: eudoxus, sans-serif;
 }
 @media (max-width: 1400px) {
   .number {
