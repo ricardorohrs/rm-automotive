@@ -2530,6 +2530,10 @@ header.tekup-header-section.header-seven.sticky-menu {
   position: relative;
   transform-style: preserve-3d;
 }
+.tekup-default-btn-white {
+  color: var(--dark-bg) !important;
+  background-color: var(--white-bg) !important;
+}
 .tekup-default-btn i,
 #tekup-default-btn i {
   font-size: 22px;
@@ -4211,7 +4215,7 @@ h1.post__title {
   opacity: 1;
 }
 .tekup-service-data {
-  height: 150px;
+  height: 75px;
   z-index: 1;
   padding: 24px;
   bottom: 0;
@@ -5153,7 +5157,7 @@ h1.post__title {
   transition: all 0.4s;
   position: absolute;
   opacity: 0;
-  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #0119FF 100%);
+  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #000 100%);
 }
 .tekup-portfolio-thumb4::after {
   content: "";
