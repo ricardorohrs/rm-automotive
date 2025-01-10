@@ -510,14 +510,14 @@
   if (google_map.is_exist()) {
     var init = function init() {
       var mapOptions = {
-        zoom: 11,
+        zoom: 18,
         scrollwheel: false,
         navigationControl: false,
         mapTypeControl: false,
         scaleControl: false,
         draggable: true,
         disableDefaultUI: true,
-        center: new google.maps.LatLng(40.6700, -73.9400),
+        center: new google.maps.LatLng(-29.5065123, -51.8070236),
         styles: [{
           "featureType": "landscape.man_made",
           "elementType": "geometry",

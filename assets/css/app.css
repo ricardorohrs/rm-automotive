@@ -512,6 +512,10 @@ p:last-child {
   font-size: 40px !important;
 }
 
+.f-size-98 {
+  font-size: 98px !important;
+}
+
 .line-height-10 {
   line-height: 10px !important;
 }
@@ -2387,8 +2391,8 @@ header.tekup-header-section.header-seven.sticky-menu {
 }
 
 .tekup-copywright p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 26px;
 }
 .tekup-copywright.light-color p {
   color: var(--white-color);
@@ -3419,8 +3423,9 @@ h1.post__title {
   }
 }
 .tekup-hero-section4 {
-  padding: 230px 0 0;
+  padding: 125px 0 0;
   position: relative;
+  background-color: #F5F5F5;
 }
 @media (max-width: 991px) {
   .tekup-hero-section4 {
@@ -3921,7 +3926,6 @@ h1.post__title {
   transition: all 0.4s;
   position: absolute;
   opacity: 0;
-  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 23.74%, #0119FF 100%);
 }
 .tekup-team-data {
   padding-top: 20px;
@@ -4728,7 +4732,7 @@ h1.post__title {
 }
 .tekup-social-icon-box.style-four ul li a:hover {
   color: var(--white-color);
-  background: var(--dark-bg);
+  background: var(--accent-bg);
 }
 .tekup-social-icon-box.style-four.position {
   bottom: 0;
@@ -4781,7 +4785,7 @@ h1.post__title {
 }
 
 .tekup-brand-logo-column {
-  padding: 100px 0;
+  padding: 0 0 100px 0;
   border-bottom: 1px solid #E7E7E8;
 }
 
@@ -4929,6 +4933,7 @@ h1.post__title {
 .tekup-portfolio-section {
   z-index: 0;
   position: relative;
+  background-color: var(--dark-bg);
 }
 .tekup-portfolio-section:before {
   content: "";
@@ -6032,7 +6037,7 @@ span.total-amount {
 }
 
 .tekup-section-padding-top {
-  padding: 130px 0 0;
+  padding: 110px 0 0;
 }
 @media (max-width: 991px) {
   .tekup-section-padding-top {
