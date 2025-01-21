@@ -3226,7 +3226,7 @@ h1.post__title {
 .tekup-hero-slider-item {
   background-position: center;
   background-size: cover;
-  padding: 350px 0 300px;
+  padding: 500px 0 300px;
   position: relative;
   opacity: 1 !important;
   animation-duration: 3s !important;
@@ -3252,7 +3252,8 @@ h1.post__title {
     padding: 170px 0 80px;
   }
 }
-.tekup-hero-slider-item::before {
+
+.tekup-hero-slider::before {
   content: "";
   left: 0;
   top: 0;
@@ -4780,7 +4781,7 @@ h1.post__title {
 }
 
 .tekup-brand-logo-column {
-  padding: 0 0 100px 0;
+  padding: 90px 0 100px 0;
   border-bottom: 1px solid #E7E7E8;
 }
 
@@ -5980,6 +5981,12 @@ span.total-amount {
   margin-top: 20px;
 }
 
+.less-padding-top {
+  padding: 15px 0 !important;
+}
+.less-padding-bottom {
+  padding: 100px 0 12px 0 !important;
+}
 .tekup-section-padding {
   padding: 130px 0;
 }
@@ -6994,6 +7001,30 @@ button#tekup-notified-btn {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+
+.tekup-hero-section2 {
+  position: relative;
+  height: 100vh; /* Ajusta a altura para a tela inteira */
+  overflow: hidden;
+}
+
+.tekup-hero-video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.tekup-hero-slider {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /*1.4 themes css*/

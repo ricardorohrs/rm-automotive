@@ -108,40 +108,44 @@
   <!--End landex-header-section -->
 
   <div class="tekup-hero-section2">
-    <div class="tekup-hero-slider">
-      <div class="tekup-hero-slider-item" style="background-image: url(assets/images/hero/hero-bg3.png)">
-        <div class="container">
-          <div class="tekup-hero-content center white-color large-content">
-            <div class="animated" data-animation-in="fadeInRight">
-              <h1>A Força do Mercado Automotivo</h1>
-              <p>
-                Há 12 anos impulsionando o setor automotivo com produtos de alta qualidade e atendimento personalizado.
-              </p>
-            </div>
-            <div class="tekup-extra-mt animated" data-animation-in="fadeInUp" data-delay-in="0.3">
-              <a class="tekup-default-btn tekup-white-btn" href="contact-us.html">Fale com um Vendedor <i class="ri-arrow-right-up-line"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tekup-hero-slider-item" style="background-image: url(assets/images/hero/hero-bg1.png)">
-        <div class="container">
-          <div class="tekup-hero-content center white-color large-content">
-            <div class="animated" data-animation-in="fadeInRight">
-              <h1>iSALITEC: Produtos Criados para Desempenho Máximo</h1>
-              <p>
-                Com mais de 200 produtos, a iSALITEC oferece soluções que combinam durabilidade,
-                inovação e alta performance para o setor automotivo.
-              </p>
-            </div>
+      <video autoplay muted loop playsinline class="tekup-hero-video-bg">
+          <source src="assets/videos/BG_Site.mp4" type="video/mp4">
+      </video>
 
-            <div class="tekup-extra-mt animated" data-animation-in="fadeInUp" data-delay-in="0.3">
-              <a class="tekup-default-btn tekup-white-btn" href="contact-us.html">Conheça a Linha Completa <i class="ri-arrow-right-up-line"></i></a>
-            </div>
+      <!-- Slider com conteúdo -->
+      <div class="tekup-hero-slider">
+          <div class="tekup-hero-slider-item">
+              <div class="container">
+                  <div class="tekup-hero-content center white-color large-content">
+                      <div class="animated" data-animation-in="fadeInRight">
+                          <h1>A Força do Mercado Automotivo</h1>
+                          <p>
+                              Há 12 anos impulsionando o setor automotivo com produtos de<br>alta qualidade e atendimento personalizado.
+                          </p>
+                      </div>
+                      <div class="tekup-extra-mt animated" data-animation-in="fadeInUp" data-delay-in="0.3">
+                          <a class="tekup-default-btn tekup-white-btn" href="contact-us.html">Fale com um vendedor <i class="ri-arrow-right-up-line"></i></a>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
+          <div class="tekup-hero-slider-item">
+              <div class="container">
+                  <div class="tekup-hero-content center white-color large-content">
+                      <div class="animated" data-animation-in="fadeInRight">
+                          <h1>iSALITEC: Produtos Criados para Desempenho Máximo</h1>
+                          <p>
+                              Com mais de 200 produtos, a iSALITEC oferece soluções que combinam durabilidade,
+                              inovação e alta performance para o setor automotivo.
+                          </p>
+                      </div>
+                      <div class="tekup-extra-mt animated" data-animation-in="fadeInUp" data-delay-in="0.3">
+                          <a class="tekup-default-btn tekup-white-btn" href="contact-us.html">Conheça a linha completa <i class="ri-arrow-right-up-line"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
   <!-- End section -->
 
@@ -150,15 +154,15 @@
     <div class="container">
       <div class="tekup-counter-wrap4">
         <div class="tekup-counter-data4">
-          <h2><span data-percentage="12" class="tekup-counter"></span>+</h2>
+          <h2><span data-percentage="12" data-start="0" class="tekup-counter"></span>+</h2>
           <p>Anos de Mercado</p>
         </div>
         <div class="tekup-counter-data4">
-          <h2><span data-percentage="26000" class="tekup-counter"></span>+</h2>
+          <h2><span data-percentage="26000" data-start="15000" class="tekup-counter"></span>+</h2>
           <p>Itens no Portfólio</p>
         </div>
         <div class="tekup-counter-data4">
-          <h2><span data-percentage="180" class="tekup-counter"></span>+</h2>
+          <h2><span data-percentage="180" data-start="0" class="tekup-counter"></span>+</h2>
           <p>Colaboradores</p>
         </div>
       </div>
@@ -180,7 +184,7 @@
         </p>
       </div>
       <div class="tekup-video-wrap extra-padding-top">
-        <img src="assets/images/v4/video-bg.png" alt="">
+        <img src="assets/images/video-thumb.png" alt="">
         <a class="tekup-video-popup video-init" href="https://www.youtube.com/watch?v=gSLyKaQCy9g">
           <img src="assets/images/v4/play-btn.png" alt="">
           <div class="waves wave-1"></div>
@@ -505,7 +509,7 @@
   <!-- End section -->
 
 
-  <div class="section tekup-section-padding" id="products">
+  <div class="section tekup-section-padding less-padding-top bg-white" id="products">
     <div class="container">
       <div class="tekup-section-title center">
         <h2>Soluções Completas para o Setor Automotivo</h2>
@@ -610,7 +614,7 @@
   </div>
   <!-- End section -->
 
-  <div class="section">
+  <div class="section bg-white">
     <div class="container">
       <div class="tekup-brand-logo-column">
         <div class="tekup-section-title center">
@@ -618,22 +622,49 @@
         </div>
         <div class="tekup-brand-slider">
           <div class="tekup-brand-slider-item">
-            <img src="assets/images/v3/b_1.png" alt="">
+            <img src="assets/images/brands/MarcasPrancheta-1.png" alt="">
           </div>
           <div class="tekup-brand-slider-item">
-            <img src="assets/images/v3/b_2.png" alt="">
+            <img src="assets/images/brands/MarcasPrancheta-2.png" alt="">
           </div>
           <div class="tekup-brand-slider-item">
-            <img src="assets/images/v3/b_3.png" alt="">
+            <img src="assets/images/brands/MarcasPrancheta-3.png" alt="">
           </div>
           <div class="tekup-brand-slider-item">
-            <img src="assets/images/v3/b_4.png" alt="">
+            <img src="assets/images/brands/MarcasPrancheta-4.png" alt="">
           </div>
           <div class="tekup-brand-slider-item">
-            <img src="assets/images/v3/b_5.png" alt="">
+            <img src="assets/images/brands/MarcasPrancheta-5.png" alt="">
           </div>
           <div class="tekup-brand-slider-item">
-            <img src="assets/images/v3/b_3.png" alt="">
+            <img src="assets/images/brands/MarcasPrancheta-6.png" alt="">
+          </div>
+          <div class="tekup-brand-slider-item">
+            <img src="assets/images/brands/MarcasPrancheta-7.png" alt="">
+          </div>
+          <div class="tekup-brand-slider-item">
+            <img src="assets/images/brands/MarcasPrancheta-8.png" alt="">
+          </div>
+          <div class="tekup-brand-slider-item">
+            <img src="assets/images/brands/MarcasPrancheta-9.png" alt="">
+          </div>
+          <div class="tekup-brand-slider-item">
+            <img src="assets/images/brands/MarcasPrancheta-10.png" alt="">
+          </div>
+          <div class="tekup-brand-slider-item">
+            <img src="assets/images/brands/MarcasPrancheta-11.png" alt="">
+          </div>
+          <div class="tekup-brand-slider-item">
+            <img src="assets/images/brands/MarcasPrancheta-12.png" alt="">
+          </div>
+          <div class="tekup-brand-slider-item">
+            <img src="assets/images/brands/MarcasPrancheta-13.png" alt="">
+          </div>
+          <div class="tekup-brand-slider-item">
+            <img src="assets/images/brands/MarcasPrancheta-14.png" alt="">
+          </div>
+          <div class="tekup-brand-slider-item">
+            <img src="assets/images/brands/MarcasPrancheta-15.png" alt="">
           </div>
         </div>
       </div>
@@ -740,13 +771,37 @@
         </div>
       </div>
       <div class="tekup-center-btn">
-        <a class="tekup-default-btn tekup-default-btn-white" href="portfolio-01.html">Saiba Mais <i class="ri-arrow-right-up-line"></i></a>
+        <a class="tekup-default-btn tekup-default-btn-white" href="portfolio-01.html">Saiba mais <i class="ri-arrow-right-up-line"></i></a>
       </div>
     </div>
   </div>
   <!-- End section -->
 
-  <div class="section tekup-section-padding" id="pegatanke" style="background-color: #F5F5F5">
+  <div class="section tekup-section-padding less-padding-bottom" id="fixadores" style="background-color: #F5F5F5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="tekup-default-content ml-60">
+            <h2>Fixadores automotivos</h2>
+            <p>
+              A mais completa linha de fixadores automotivos de com mais de 4.000 itens e 10.000 aplicações diferentes entre carros, caminhões, vans e motos.
+            </p>
+            <div class="tekup-extra-mt">
+              <a class="tekup-default-btn btn-sm" href="https://linktr.ee/rmautomotive">Catálogo virtual <i class="ri-arrow-right-up-line"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="tekup-thumb mr-30">
+            <img src="assets/images/fixadores.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div id="pegatanke" class="section tekup-section-padding" style="background-color: #F5F5F5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -763,7 +818,7 @@
               e a indústria, garantindo reparações e construções duradouras.
             </p>
             <div class="tekup-extra-mt">
-              <a class="tekup-default-btn" href="about-us.html">Saiba Mais <i class="ri-arrow-right-up-line"></i></a>
+              <a class="tekup-default-btn" href="about-us.html">Saiba mais <i class="ri-arrow-right-up-line"></i></a>
             </div>
           </div>
         </div>
@@ -777,8 +832,8 @@
       <div class="row">
         <div class="col-xl-6 col-lg-8">
           <div class="tekup-cta-content">
-            <h2>Venha trabalhar com a gente</h2>
-            <p>Seja um vendedor da RM!</p>
+            <h2>Venha trabalhar com a gente!</h2>
+            <p>Seja um vendedor ou colaborador da RM.</p>
           </div>
         </div>
         <div class="col-xl-6 col-lg-4 d-flex align-items-center justify-content-end">
@@ -801,30 +856,30 @@
           <div class="col-lg-7 d-flex align-items-center">
             <div class="tekup-main-form border-0">
               <p>Precisa de mais informações? Estamos aqui para ajudar. Entre em contato conosco e descubra como podemos apoiar seu negócio.</p>
-              <form action="#">
+              <form action="mail.php" method="POST">
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="tekup-main-field">
-                      <input type="text" placeholder="Nome">
+                      <input type="text" name="name" placeholder="Nome">
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="tekup-main-field">
-                      <input type="number" placeholder="Telefone">
+                      <input type="number" name="phone" placeholder="Telefone">
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="tekup-main-field">
-                      <input type="email" placeholder="E-mail">
+                      <input type="email" name="email" placeholder="E-mail">
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="tekup-main-field">
-                      <textarea name="textarea" placeholder="Escreva sua mensagem"></textarea>
+                      <textarea type="textarea" name="message" placeholder="Escreva sua mensagem"></textarea>
                     </div>
                   </div>
                   <div class="col-lg-12">
-                    <button id="tekup-main-form-btn" type="button">Enviar Mensagem <i class="ri-arrow-right-up-line"></i></button>
+                    <button id="tekup-main-form-btn" type="button">Enviar mensagem <i class="ri-arrow-right-up-line"></i></button>
                   </div>
                 </div>
 

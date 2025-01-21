@@ -315,21 +315,22 @@
       var a = 0;
       $(window).scroll(function () {
         var oTop = $(tekup_counter).offset().top - window.innerHeight;
-        if (a == 0 && $(window).scrollTop() > oTop) {
+        if (a === 0 && $(window).scrollTop() > oTop) {
           $('.tekup-counter').each(function () {
             var $this = $(this),
-              countTo = $this.attr('data-percentage');
-            $({
-              countNum: $this.text()
-            }).animate({
+                startValue = parseInt($this.attr('data-start')) || 0,
+                countTo = parseInt($this.attr('data-percentage'));
+
+            $this.text(startValue);
+            $({ countNum: startValue }).animate({
               countNum: countTo
             }, {
               duration: 4000,
               easing: 'swing',
-              step: function step() {
+              step: function () {
                 $this.text(Math.floor(this.countNum));
               },
-              complete: function complete() {
+              complete: function () {
                 $this.text(this.countNum);
               }
             });
@@ -338,6 +339,7 @@
         }
       });
     }
+
 
     /*--------------------------------------------------------------
     TEKUP MAGNIFIC POPUP JS INIT
