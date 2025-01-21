@@ -3986,6 +3986,7 @@ h1.post__title {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  padding-bottom: 5px;
 }
 
 .tekup-4column-slider .slick-list.draggable,
@@ -7026,6 +7027,41 @@ button#tekup-notified-btn {
   display: flex;
   align-items: center;
 }
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.tekup-six-column-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  flex-direction: column;
+
+  .slick-track {
+    left: -75px;
+  }
+}
+
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 70px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.fade-overlay.left {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.fade-overlay.right {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
 
 /*1.4 themes css*/
 /*# sourceMappingURL=app.css.map */
