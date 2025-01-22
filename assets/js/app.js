@@ -325,7 +325,7 @@
             $({ countNum: startValue }).animate({
               countNum: countTo
             }, {
-              duration: 4000,
+              duration: 1500,
               easing: 'swing',
               step: function () {
                 $this.text(Math.floor(this.countNum));
@@ -339,7 +339,6 @@
         }
       });
     }
-
 
     /*--------------------------------------------------------------
     TEKUP MAGNIFIC POPUP JS INIT
