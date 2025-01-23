@@ -275,9 +275,11 @@
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         dots: true,
         autoplay: false,
+        prevArrow: '<button class="slide-arrow tekup-t-next custom-slider-btn"><i class="ri-arrow-left-s-line"></i></button>',
+        nextArrow: '<button class="slide-arrow tekup-t-prev custom-slider-btn"><i class="ri-arrow-right-s-line"></i></button>',
         responsive: [{
           breakpoint: 1400,
           settings: {

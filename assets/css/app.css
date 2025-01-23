@@ -7062,6 +7062,20 @@ button#tekup-notified-btn {
   background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
+.custom-slider-btn {
+  left: 30px;
+  top: 30%;
+  background-color: rgba(245, 245, 245, 0.40);
+
+  &.tekup-t-prev {
+    left: auto;
+    right: 30px;
+  }
+}
+
+.custom-slider-btn:hover {
+  background-color: rgba(33, 109, 253, 0.35);
+}
 
 /*1.4 themes css*/
 /*# sourceMappingURL=app.css.map */
