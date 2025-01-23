@@ -7037,10 +7037,6 @@ button#tekup-notified-btn {
   display: flex;
   transition: transform 0.5s ease-in-out;
   flex-direction: column;
-
-  .slick-track {
-    left: -75px;
-  }
 }
 
 .fade-overlay {
