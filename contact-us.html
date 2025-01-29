@@ -49,7 +49,7 @@
           </div>
           <div class="tekup-header-info">
             <ul>
-              <a class="tekup-default-btn" href="contact-us.html">Trabalhe conosco <i class="ri-arrow-right-up-line"></i></a>
+              <a class="tekup-default-btn" href="#contact">Trabalhe conosco <i class="ri-arrow-right-up-line"></i></a>
             </ul>
           </div>
         </div>
@@ -122,7 +122,7 @@
   </div>
   <!-- End breadcrumb -->
 
-  <div class="section tekup-section-padding">
+  <div class="section tekup-section-padding" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-xl-5 col-lg-6 d-flex align-items-center">
@@ -154,7 +154,7 @@
           <div class="tekup-main-form">
             <h3>Entre em contato</h3>
             <p>Preencha os campos a seguir que logo retornaremos</p>
-            <form action="mail.php" method="POST" >
+            <form action="mail.php" method="POST">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="tekup-main-field">
@@ -168,12 +168,30 @@
                 </div>
                 <div class="col-lg-12">
                   <div class="tekup-main-field">
-                    <input name="email"  type="email" placeholder="E-mail">
+                    <input name="email" type="email" placeholder="E-mail">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="tekup-checkout-field">
+                    <select name="setor" required>
+                      <option value="" disabled selected>Setor</option>
+                      <option value="Vendedor Externo">Vendedor Externo</option>
+                      <option value="Vendedor Interno">Vendedor Interno</option>
+                      <option value="Compras">Compras</option>
+                      <option value="Faturamento">Faturamento</option>
+                      <option value="Marketing">Marketing</option>
+                      <option value="Almoxarifado">Almoxarifado</option>
+                      <option value="Logística">Logística</option>
+                      <option value="Administrativo">Administrativo</option>
+                      <option value="Financeiro">Financeiro</option>
+                      <option value="Cobrança">Cobrança</option>
+                      <option value="Suporte TI">Suporte TI</option>
+                    </select>
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="tekup-main-field">
-                    <textarea name="message" name="textarea" placeholder="Mensagem"></textarea>
+                    <textarea name="message" placeholder="Mensagem"></textarea>
                   </div>
                 </div>
                 <div class="col-lg-12">
