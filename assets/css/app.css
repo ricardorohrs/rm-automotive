@@ -2329,7 +2329,7 @@ header.tekup-header-section.header-seven.sticky-menu {
 
 .tekup-contact-info-wrap.wrap2 .tekup-contact-info {
     padding-top: 30px;
-    padding-right: 50px;
+    padding-right: 25px;
     border-right: 1px solid #E7E7E8;
 }
 
@@ -2342,7 +2342,7 @@ header.tekup-header-section.header-seven.sticky-menu {
 .tekup-contact-info-wrap.wrap2 .tekup-contact-info:last-child {
     border-right: 0;
     padding-right: 0;
-    padding-left: 50px;
+    padding-left: 25px;
 }
 
 @media (max-width: 1399px) {
@@ -6629,17 +6629,22 @@ ul.tekup-tabs-menu li a img {
     height: 148px;
 }
 
+.tekup-checkout-field select:focus {
+    border-bottom: 1px solid var(--accent-color) !important;
+}
+
 .tekup-checkout-field select {
     height: 60px;
     width: 100%;
     font-size: 20px;
     position: relative;
     color: rgba(13, 14, 29, 0.6);
-    border: 1px solid #E7E7E8;
-    -webkit-appearance: none;
+    border: none;
+    border-bottom: 1px solid #E7E7E8;
     -moz-appearance: none;
     appearance: none;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 .tekup-checkout-field select:focus-visible {
