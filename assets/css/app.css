@@ -49,8 +49,8 @@
 *::before,
 *::after {
     box-sizing: inherit;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -90,7 +90,7 @@ hr {
     border: 0;
     border-top: 1px solid #E5E7E8;
     padding: 0;
-    margin: 0px;
+    margin: 0;
 }
 
 audio,
@@ -3249,7 +3249,7 @@ button#tekup-subscription-btn i:hover {
     position: absolute;
     background-size: cover;
     background-position: center center;
-    background-image: url(../images/breadcrumb/overlay.png);
+    background-image: url(../images/overlay.png);
 }
 
 @media (max-width: 991px) {
@@ -3428,43 +3428,6 @@ h1.post__title {
     }
 }
 
-.tekup-hero-section {
-    z-index: 0;
-    position: relative;
-    padding: 340px 0 130px;
-    background-size: cover;
-    background-position: center center;
-}
-
-@media (max-width: 1199px) {
-    .tekup-hero-section {
-        padding: 350px 0 130px;
-    }
-}
-
-@media (max-width: 991px) {
-    .tekup-hero-section {
-        padding: 250px 0 100px;
-    }
-}
-
-@media (max-width: 991px) {
-    .tekup-hero-section {
-        padding: 170px 0 80px;
-    }
-}
-
-.tekup-hero-section::before {
-    content: "";
-    left: 0;
-    top: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-image: url(../images/v1/overlay.png);
-}
-
 .tekup-hero-content {
     position: relative;
     z-index: 1;
@@ -3582,7 +3545,7 @@ h1.post__title {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url(../images/v2/overlay.png);
+    background-image: url(../images/overlay.png);
 }
 
 .tekup-hero-slider .tekup-hero-next,
@@ -3782,43 +3745,6 @@ h1.post__title {
     background-color: var(--dark-bg);
 }
 
-.tekup-hero-section5 {
-    z-index: 0;
-    position: relative;
-    padding: 310px 0 200px;
-    background-size: cover;
-    background-position: center center;
-}
-
-@media (max-width: 1199px) {
-    .tekup-hero-section5 {
-        padding: 300px 0 130px;
-    }
-}
-
-@media (max-width: 991px) {
-    .tekup-hero-section5 {
-        padding: 200px 0 100px;
-    }
-}
-
-@media (max-width: 767px) {
-    .tekup-hero-section5 {
-        padding: 170px 0 80px;
-    }
-}
-
-.tekup-hero-section5::before {
-    content: "";
-    left: 0;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-image: url(../images/v5/overlay.png);
-}
-
 .tekup-hero-form {
     padding: 30px;
     background-color: var(--white-bg);
@@ -3837,48 +3763,6 @@ h1.post__title {
 .tekup-hero-form p {
     font-size: 20px;
     line-height: 28px;
-}
-
-.tekup-hero-slider-item2 {
-    background-size: cover;
-    background-position: center;
-    padding: 300px 0 200px;
-    position: relative;
-}
-
-@media (max-width: 1199px) {
-    .tekup-hero-slider-item2 {
-        padding: 300px 0 150px;
-    }
-}
-
-@media (max-width: 991px) {
-    .tekup-hero-slider-item2 {
-        padding: 250px 0 150px;
-    }
-}
-
-@media (max-width: 767px) {
-    .tekup-hero-slider-item2 {
-        padding: 200px 0 100px;
-    }
-}
-
-@media (max-width: 575px) {
-    .tekup-hero-slider-item2 {
-        padding: 170px 0 80px;
-    }
-}
-
-.tekup-hero-slider-item2::before {
-    content: "";
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-size: cover;
-    background-image: url(../images/v6/overlay.png);
 }
 
 .tekup-hero-section7 {
@@ -4085,52 +3969,6 @@ h1.post__title {
 @media (max-width: 991px) {
     .tekup-hero-thumb4 {
         display: none;
-    }
-}
-
-.tekup-hero-section10 {
-    z-index: 0;
-    position: relative;
-    padding: 320px 0 100px;
-}
-
-@media (max-width: 1199px) {
-    .tekup-hero-section10 {
-        padding: 300px 0 100px;
-    }
-}
-
-@media (max-width: 991px) {
-    .tekup-hero-section10 {
-        padding: 200px 0 100px;
-    }
-}
-
-@media (max-width: 767px) {
-    .tekup-hero-section10 {
-        padding: 170px 0 80px;
-    }
-}
-
-.tekup-hero-section10 .tekup-hero-content p {
-    max-width: 600px;
-}
-
-.tekup-hero-section10:before {
-    content: "";
-    right: 0;
-    top: 0;
-    width: 54%;
-    height: 100%;
-    position: absolute;
-    background-size: cover;
-    background-position: center right;
-    background-image: url(../images/v10/hero-thumb.png);
-}
-
-@media (max-width: 991px) {
-    .tekup-hero-section10:before {
-        background-image: none !important;
     }
 }
 
@@ -7066,33 +6904,6 @@ span.total-amount {
 .static-value:before {
     display: inline-block;
     content: attr(data-active);
-}
-
-.pricing-btn .btn-toggle {
-    position: relative;
-    width: 70px !important;
-    height: 35px;
-    border-radius: 50px;
-    border: none;
-    margin: 0;
-    padding: 0 !important;
-    cursor: pointer;
-    background-size: 25px;
-    background-position: center right 5px;
-    background-color: transparent !important;
-    border: 1px solid var(--heading-color) !important;
-    background-image: url(../images/icon/circle.svg);
-}
-
-.pricing-btn .btn-toggle:focus {
-    outline: none;
-    box-shadow: none;
-    background-image: url(../images/icon/circle.svg);
-}
-
-.pricing-btn .btn-toggle:checked {
-    background-position: center left 5px;
-    background-image: url(../images/icon/circle.svg);
 }
 
 .tekup-errors-btn.contact-us {
