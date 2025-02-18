@@ -7763,5 +7763,12 @@ button#tekup-notified-btn {
     background-color: rgba(33, 109, 253, 0.35);
 }
 
+@media (max-width: 767px) {
+    .fixers {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+}
+
 /*1.4 themes css*/
 /*# sourceMappingURL=app.css.map */
