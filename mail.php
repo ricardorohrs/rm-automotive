@@ -1,21 +1,21 @@
 <?php
-    if (true) {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = strip_tags(trim($_POST["name"]));
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $phone = trim($_POST["phone"]);
         $message = trim($_POST["message"]);
 
-//        if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-//            http_response_code(400);
-//            echo "Por favor complete o formulário e tente novamente.";
-//            exit;
-//        }
+        if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            http_response_code(400);
+            echo "Por favor complete o formulário e tente novamente.";
+            exit;
+        }
 
 //        $recipient = "rh@rmautomotive.com.br";
         $recipient = "rerohrs@inf.ufsm.br";
 
-        $subject = "Novo Envio do Formilário de Contato";
+        $subject = "Novo Envio do Formulário de Contato";
 
         $email_content = "Nome: $name  \r\n\n";
         $email_content .= "Email: $email \r\n\n";
