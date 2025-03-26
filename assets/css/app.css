@@ -3546,6 +3546,7 @@ h1.post__title {
     height: 100%;
     position: absolute;
     background-image: url(../images/overlay.png);
+    background-size: cover;
 }
 
 .tekup-hero-slider .tekup-hero-next,
